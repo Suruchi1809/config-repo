@@ -1,0 +1,10 @@
+server:
+  port: 8888  # Default port for Config Server
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Suruchi1809/config-repo  # External GitHub repository for configuration files
+          clone-on-start: true
