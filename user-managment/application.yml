@@ -11,3 +11,12 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+    spring:
+  zipkin:
+    base-url: http://localhost:9411  # Points to your running Zipkin server (Docker in this case)
+    enabled: true                    # Enables Zipkin tracing
+  sleuth:
+    sampler:
+      probability: 1.0               # Ensures 100% of requests are traced
+
